@@ -1,0 +1,15 @@
+n=int(input())
+l=[]
+max=0
+j=0
+for i in range(0,n):
+    name=input()
+    name=name.split(",")
+    l.append(name)
+#print(l)
+for i in range(0,len(l)):
+    if int(l[i][1])>max:
+        max=int(l[i][1])
+        j=i
+print(l[j][0])
+       
